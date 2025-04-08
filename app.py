@@ -14,8 +14,8 @@ def returnData():
     if data.get('userText'):
         data['userText'] = data['userText'].upper()
 
-        out = render_template('data.html', data=data)
-        return jsonify(out)
+
+        return render_template('data.html', data=data)
 
 if __name__ == '__main__':
     app.run()

@@ -10,7 +10,7 @@ function sendText() {
         body: JSON.stringify({ userText: usertext }),
         }
     ).then(response => {return response.text();})
-        .then(text => updateData.innerHTML=text);
+        .then(html => updateData.innerHTML=html);
 
 
 };
