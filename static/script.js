@@ -24,7 +24,7 @@ function sendText() {
                 return response.text();
             })
                 .then(html => updateData.innerHTML = html);
-
+                //.then(html => console.log(html));
         } else {
             alert('The textbox value contains non-ASCII characters.');
         }

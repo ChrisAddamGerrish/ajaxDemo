@@ -6,25 +6,33 @@
 </head>
 
 <style>
-    .d {padding: 20px;}
+
 </style>
 
 <script src="/static/script.js"></script>
 
 <body>
 
-    <div>
-        <label>Enter Text Here!</label>
+
         <div>
-            <input id="userText" placeholder="Enter text here."> </input>
-            <button onclick="sendText()">Submit</button>
+            <div style="padding: 10px;">
+                <label for="userText" >Enter Text Here!</label>
+            </div>
+
+
+                <div style="padding: 10px;">
+
+                    <input id="userText" type="text" placeholder="Enter text here." />
+                </div>
+                <div style="padding: 10px;">
+                    <button type="submit" onclick="sendText()"> Submit</button>
+                </div>
+
+
+            <div id="result" style="padding: 10px;">
+
+            </div>
         </div>
-
-    </div>
-
-    <div id="result" style='padding:10px'>
-
-    </div>
 
 
 </body>
