@@ -11,6 +11,7 @@ def index():  # put application's code here
 def returnData():
     data = request.get_json()
 
+
     if data.get('userText'):
         data['userText'] = data['userText'].upper()
 
